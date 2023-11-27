@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fat cat's home</title>
+	<link rel="stylesheet" href="{% static 'home/main.css' %}">
+</head>
+<body>
+    <div class= "content">
+        <div class = "header">
+            <h1>fat cat's home</h1>
+            <p>welcome, username</p>
+        </div>
+		<div class= "options">
+			<div class= "option">
+				<div class= "optionImage">
+					<image src="{% static 'home/imgs/catTracker.jpg' %}" alt="catimg" width = 200 height = 160></image>
+				</div>
+				<div class= "optionButton">
+					<button type="button" id = "trackBTN" name = "trackBTN" >dab tracker</button>
+				</div>
+			</div>
+
+			<div class= "option">
+				<div class= "optionImage">
+					<image src="{% static 'home/imgs/catWeed.jpg' %}" alt="catimg" width = 200 height = 160 ></image>
+				</div>
+				<div class= "optionButton">
+					<button type="button" id = "cheapBTN" name = "cheapBTN" >cheap weed finder</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+

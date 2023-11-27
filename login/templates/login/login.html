@@ -1,9 +1,46 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cat thats fat</title>
+	<link rel="stylesheet" type = "text/css" href="{% static 'login/main.css' %}" >
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1></h1>
+		</div>
+		<div class="content">
+			<div class="smurfcatimg">
+			<img src="{% static 'login/imgs/smurfcat.jpg' %}" alt="smurfcat">
+			</div>
+            <div class = "loginstatus">
+                {% if message %}
+                <p>status: {{ message }}</p>
+                {% endif %}
+            </div>
+				<form method="post" action = "{% url 'login_submit' %}">
+                    {% csrf_token %}
+					<div class="login">
+						<div class="input">
+							<input type="text" id="username" name="username" placeholder="enter username">
+						</div>
+						<div class="input">
+							<input type="password" id="password" name="password" placeholder="enter password">
+						</div>
+						<div class="buttons">
+							<!-- <button type="submit" name="register">register</button> -->
+							<button type="submit" name="signin">sign in</button>
+						</div>
+					</div>
+				</form>
+		</div>
+	</div>
+	<div class="footer">
+		<h1></h1>
+	</div>
+</body>
 </html>
