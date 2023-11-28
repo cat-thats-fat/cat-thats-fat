@@ -1,6 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 def cwf(request):
-    return HttpResponse("<h1>Cheap Weed Finder</h1>")
+    return render(request, 'cwf/cwf.html')
+
+def backBTN(request):
+    return redirect('home')
 

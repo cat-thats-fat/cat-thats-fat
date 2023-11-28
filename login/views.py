@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 def login(request):
     return render(request, 'login/login.html', {'message': 'idle'})
 
-def login_submit (requests):
+def login_submit(requests):
 
-    return render(requests, 'login/login.html', {'message': 'login invalid'})
+    return redirect('home')

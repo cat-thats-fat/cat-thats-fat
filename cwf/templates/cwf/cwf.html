@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cheap weed finder</title>
+	<link rel="stylesheet" type = "text/css" href="{% static 'cwf/main.css' %}" >
+</head>
+<body>
+	<div class="header">
+		<form method = "post" action = "{% url 'backBTN' %}">
+			{% csrf_token %}
+			<button type = "submit" id = "backBTN" name = "backBTN">back</button>
+		</form>
+	</div>
+
+	<div class="container">
+		<h1>cheap weed finder</h1>
+		<div class = "output">
+			
+		</div>
+		<div class = "controls">
+			<p>stores:</p>
+			<div class = "buttons">
+				<button type>MaryJ's</button>
+				<button type>Inspired</button>
+				<button type>710</button>
+				<button type>Giggles</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h1></h1>
+	</div>
+</body>
+</html>

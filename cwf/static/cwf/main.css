@@ -3,15 +3,21 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+    align-items: stretch;
     background: #000000;
     color: #ffffff;
-    height: 100vh;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 h1 {
@@ -20,7 +26,6 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding-bottom: 50%;
 
 }
 
@@ -56,7 +61,7 @@ input:focus {
 input:focus::placeholder {
     color: #ffffff00;
     outline: none;
-}
+}   
 
 button {
     font-weight: bold;
@@ -68,36 +73,21 @@ button {
     padding: 5px;
 }
 
-.login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+
+p {
+    font-weight: bold;
+    text-align: center;
+    outline: none;
 }
 
-
-
-
-
-
-
-.option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-
-.options {
+.controls {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
