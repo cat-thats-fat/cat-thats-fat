@@ -1,0 +1,240 @@
+{
+    "MaryJ's": {
+        "Sativa Harvest Milled": {
+            "category": "sativa",
+            "brand": "Divvy",
+            "dpg": [
+                [
+                    3.349285714285714,
+                    "14",
+                    "46.89"
+                ]
+            ]
+        },
+        "Chemfire Kush": {
+            "category": "indica",
+            "brand": "Well Made",
+            "dpg": [
+                [
+                    3.3924999999999996,
+                    "28",
+                    "94.99"
+                ]
+            ]
+        },
+        "Mac Daddy Purpz": {
+            "category": "hybrid",
+            "brand": "Well Made",
+            "dpg": [
+                [
+                    3.3924999999999996,
+                    "28",
+                    "94.99"
+                ]
+            ]
+        },
+        "Top Crop": {
+            "category": "indica",
+            "brand": "The Original Fraser Valley Weed Co.",
+            "dpg": [
+                [
+                    3.5710714285714285,
+                    "28",
+                    "99.99"
+                ]
+            ]
+        },
+        "Citrus Notes Milled": {
+            "category": "hybrid",
+            "brand": "Parcel",
+            "dpg": [
+                [
+                    3.7128571428571426,
+                    "7",
+                    "25.99"
+                ]
+            ]
+        }
+    },
+    "Inspired": {
+        "Citrus Notes": {
+            "category": "hybrid",
+            "brand": "Parcel",
+            "dpg": [
+                [
+                    3.564285714285714,
+                    "7",
+                    "24.95"
+                ]
+            ]
+        },
+        "Sweet Notes Sundae Driver": {
+            "category": "hybrid",
+            "brand": "Parcel",
+            "dpg": [
+                [
+                    3.567857142857143,
+                    "14",
+                    "49.95"
+                ]
+            ]
+        },
+        "Strawberry Amnesia": {
+            "category": "sativa",
+            "brand": "The Original Fraser Valley Weed Co.",
+            "dpg": [
+                [
+                    3.7125,
+                    "28",
+                    "103.95"
+                ]
+            ]
+        },
+        "Top Crop": {
+            "category": "indica",
+            "brand": "The Original Fraser Valley Weed Co.",
+            "dpg": [
+                [
+                    3.7125,
+                    "28",
+                    "103.95"
+                ]
+            ]
+        },
+        "Fruitsplosion": {
+            "category": "sativa",
+            "brand": "Canaca",
+            "dpg": [
+                [
+                    4.2785714285714285,
+                    "7",
+                    "29.95"
+                ]
+            ]
+        }
+    },
+    "710": {
+        "BC Sour Kush": {
+            "category": "Indica",
+            "brand": "Fraser Valley Weed Co.",
+            "dpg": [
+                [
+                    3.3007142857142857,
+                    "14",
+                    46.21
+                ]
+            ]
+        },
+        "D. Burger": {
+            "category": "Indica",
+            "brand": "Fraser Valley Weed Co.",
+            "dpg": [
+                [
+                    3.389642857142857,
+                    "28",
+                    94.91
+                ]
+            ]
+        },
+        "MAC 1": {
+            "category": "Hybrid",
+            "brand": "Fraser Valley Weed Co.",
+            "dpg": [
+                [
+                    3.389642857142857,
+                    "28",
+                    94.91
+                ]
+            ]
+        },
+        "Jean Guy": {
+            "category": "Sativa",
+            "brand": "Good Supply",
+            "dpg": [
+                [
+                    3.5710714285714285,
+                    "28",
+                    99.99
+                ],
+                [
+                    4.064,
+                    "15",
+                    60.96
+                ],
+                [
+                    5.0,
+                    "3.5",
+                    17.5
+                ]
+            ]
+        },
+        "Bush League Sour Kush": {
+            "category": "Indica",
+            "brand": "Back Forty",
+            "dpg": [
+                [
+                    3.8728571428571428,
+                    "7",
+                    27.11
+                ]
+            ]
+        }
+    },
+    "Giggles": {
+        "Nubium - Moonflower T-24 - Hybrid": {
+            "category": "Hybrid",
+            "brand": "Nubium",
+            "dpg": [
+                [
+                    3.8557142857142854,
+                    "7",
+                    26.99
+                ]
+            ]
+        },
+        "Versus - Sweet Island Skunk - Sativa": {
+            "category": "Sativa",
+            "brand": "Versus",
+            "dpg": [
+                [
+                    3.9282142857142857,
+                    "28",
+                    109.99
+                ]
+            ]
+        },
+        "SHRED - All Dressed - Hybrid": {
+            "category": "Hybrid",
+            "brand": "SHRED",
+            "dpg": [
+                [
+                    4.135714285714285,
+                    "7",
+                    28.95
+                ]
+            ]
+        },
+        "SHRED - Dessert Storm - Hybrid": {
+            "category": "Hybrid",
+            "brand": "SHRED",
+            "dpg": [
+                [
+                    4.135714285714285,
+                    "7",
+                    28.95
+                ]
+            ]
+        },
+        "Funk Master": {
+            "category": "Hybrid",
+            "brand": "SHRED",
+            "dpg": [
+                [
+                    4.135714285714285,
+                    "7",
+                    28.95
+                ]
+            ]
+        }
+    }
+}

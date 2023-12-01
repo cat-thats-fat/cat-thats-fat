@@ -1,51 +1,90 @@
 {% load static %}
-
+{% load my_filters %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>cheap weed finder</title>
-	<link rel="stylesheet" type = "text/css" href="{% static 'cwf/main.css' %}" >
+	<link rel="stylesheet" type="text/css" href="{% static 'cwf/main.css' %}">
+	<link rel="icon" href="{% static 'cwf/imgs/favicon.ico' %}">
 </head>
 <body>
 	<div class="header">
-		<form method = "post" action = "{% url 'backBTN' %}">
+		<form method="post" action="{% url 'backBTN' %}">
 			{% csrf_token %}
-			<button type = "submit" id = "backBTN" name = "backBTN">back</button>
+			<button type="submit" id="backBTN" name="backBTN">back</button>
 		</form>
 	</div>
 
 	<div class="container">
 		<h1>cheap weed finder</h1>
-		<div class = "output">
-			<div id = "square">
-				<div id = "maryj" class = "outbox">
-					<div class = "storename"> MaryJ's </div>
-					<div class = offers"> 
-						<div id ""
-					 </div>
-
+		<div class="output">
+			<div id="square">
+				<div id="maryj" class="outbox">
+					<div class="storename">MaryJ's</div>
+					<div class="data">
+						{% for key, value in maryjs.items %}
+						<div class="offer">
+							<div class="Name">{{ key }} - {{ value.brand }}</div>
+							<div class="Category">{{ value.category }}</div>
+							<div class="DPG">{{ value.dpg.0.0 }} $/g at {{ value.dpg.0.1 }}gs totalling ${{ value.dpg.0.2 }}</div>
+						</div>
+						{% endfor %}
+					</div>
 				</div>
-				<div id = "inspired" class = "outbox"> Inspired </div>
-				<div id = "710" class = "outbox"> 710 </div>
-				<div id = "giggles" class = "outbox"> Giggles </div>
+				<div id="inspired" class="outbox">
+					<div class="storename">Inspired</div>
+					<div class="data">
+						{% for key, value in inspired.items %}
+						<div class="offer">
+							<div class="Name">{{ key }} - {{ value.brand }}</div>
+							<div class="Category">{{ value.category }}</div>
+							<div class="DPG">{{ value.dpg.0.0 }} $/g at {{ value.dpg.0.1 }}gs totalling ${{ value.dpg.0.2 }}</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div id="710" class="outbox">
+					<div class="storename">710</div>
+					<div class="data">
+						{% for key, value in seventen.items %}
+						<div class="offer">
+							<div class="Name">{{ key }} - {{ value.brand }}</div>
+							<div class="Category">{{ value.category }}</div>
+							<div class="DPG">{{ value.dpg.0.0 }} $/g at {{ value.dpg.0.1 }}gs totalling ${{ value.dpg.0.2 }}</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div id="giggles" class="outbox">
+					<div class="storename">Giggles</div>
+					<div class="data">
+						{% for key, value in giggles.items %}
+						<div class="offer">
+							<div class="Name">{{ key }} - {{ value.brand }}</div>
+							<div class="Category">{{ value.category }}</div>
+							<div class="DPG">{{ value.dpg.0.0 }} $/g at {{ value.dpg.0.1 }}gs totalling ${{ value.dpg.0.2 }}</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class = "controls">
-			<div class = "storetext">
+		<div class="controls">
+			<!-- <div class="storetext">
 				<p>stores: </p>
 			</div>
-			<div class = "buttons">
-				<button type = "button">MaryJ's</button>
-				<button type = "button">Inspired</button>
-				<button type = "button">710</button>
-				<button type = "button">Giggles</button>
-			</div>
-			<div class = "search">
-				<button type = "button" class = "searchBTN">search</button>
-			</div>
-		</div>
+			<div class="buttons">
+				<button type="button">MaryJ's</button>
+				<button type="button">Inspired</button>
+				<button type="button">710</button>
+				<button type="button">Giggles</button>
+			</div>-->
+			<form class="search" action="{% url 'cwfdata' %}">
+				{% csrf_token %}
+				<button type="submit" class="searchBTN">search</button>
+			</form>
 	</div>
 
 	<div class="footer">

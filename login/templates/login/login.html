@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +13,9 @@
 			<h1></h1>
 		</div>
 		<div class="content">
-			<div class="smurfcatimg">
-			<img src="{% static 'login/imgs/smurfcat.jpg' %}" alt="smurfcat">
-			</div>
+
+			<img src="{% static 'login/imgs/smurfcat.jpg' %}" id = "smurfcat" alt="smurfcat">
+
             <div class = "loginstatus">
                 {% if message %}
                 <p>status: {{ message }}</p>

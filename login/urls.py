@@ -1,9 +1,11 @@
 from django.urls import include, path
-from . import views
-
+from . import views as login_views
+from django.contrib.auth import views as auth_views
+from .views import CustomLoginView
 
 urlpatterns = [
-    path('', views.login, name='login-home'),
-    path('login_submit', views.login_submit, name='login_submit'),
-    path('login_submit', include('home.urls')),
+    path('', login_views.login, name='login-home'),
+    path('login_submit', login_views.login_submit, name='login_submit'),
+    path('login/', CustomLoginView.as_view(), name='login'),
+\
 ]

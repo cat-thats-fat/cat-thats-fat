@@ -19,8 +19,8 @@
 				<div class="optionImage">
 					<image src="{% static 'home/imgs/catTracker.jpg' %}" alt="catimg" width="200" height="160"></image>
 				</div>
-				<form method="post" action="{% url 'cwfBTN' %}">
-					{% csrf_token %}
+				<form method="post">
+					<!--{% csrf_token %}-->
 					<button type="button" id="trackBTN" name="trackBTN">coming soon</button>
 				</form>
 			</div>
@@ -29,7 +29,7 @@
 				<div class="optionImage">
 					<image src="{% static 'home/imgs/catWeed.jpg' %}" alt="catimg" width="200" height="160"></image>
 				</div>
-				<form action="{% url 'cwfBTN' %}" method="post">
+				<form action="{% url 'cwf' %}" method="post">
 					{% csrf_token %}
 					<button type="submit" id="cwfBTN" name="cwfBTN">cheap weed finder</button>
 				</form>

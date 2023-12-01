@@ -25,6 +25,9 @@ SECRET_KEY = 'django-insecure-p2*1a$3cj-q$t!al%z9!04^(lv+^_j1k===y(3$fkxt#2#fl__
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+LOGIN_REDIRECT_URL = 'home'
+# settings.py
+LOGIN_URL = '/login/'
 ALLOWED_HOSTS = []
 
 
@@ -57,7 +60,7 @@ ROOT_URLCONF = 'catthatsfat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['login/templates', 'home/templates', 'cwf/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
