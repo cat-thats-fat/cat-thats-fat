@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p2*1a$3cj-q$t!al%z9!04^(lv+^_j1k===y(3$fkxt#2#fl__'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 LOGIN_REDIRECT_URL = 'home'
 # settings.py
 LOGIN_URL = '/login/'
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["cat-thats-fat.com", "www.cat-thats-fat.com"]
 
 
 # Application definition
