@@ -4,7 +4,9 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def home(request):
-    return render(request, 'home/home.html')
+    username = request.user.username
+    context = {'username': username}
+    return render(request, 'home/home.html', context)
 
 @login_required
 def cwfBTN(request):
