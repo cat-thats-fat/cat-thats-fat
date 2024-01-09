@@ -27,13 +27,14 @@ DEBUG = True
 
 LOGIN_REDIRECT_URL = 'home'
 # settings.py
-LOGIN_URL = '/login/'
+LOGIN_URL = 'login'
 ALLOWED_HOSTS = ["cat-thats-fat.com", "www.cat-thats-fat.com", "127.0.0.1"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'tracker.apps.TrackerConfig',
     'cwf.apps.CwfConfig',
     'login.apps.LoginConfig',
     'home.apps.HomeConfig',

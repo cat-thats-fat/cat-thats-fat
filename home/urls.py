@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('cwfBTN', include('cwf.urls')),
+    path('trackerBTN', include('tracker.urls')),
 ]

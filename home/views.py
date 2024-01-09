@@ -4,11 +4,12 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def home(request):
-    username = request.user.username
-    context = {'username': username}
-    return render(request, 'home/home.html', context)
+    return render(request, 'home/home.html')
 
 @login_required
 def cwfBTN(request):
     return redirect('cwf')
 
+@login_required
+def trackerBTN(request):
+    return redirect('tracker')

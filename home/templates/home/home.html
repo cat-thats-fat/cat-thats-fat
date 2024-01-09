@@ -19,9 +19,9 @@
 				<div class="optionImage">
 					<image src="{% static 'home/imgs/catTracker.jpg' %}" alt="catimg" width="200" height="160"></image>
 				</div>
-				<form method="post">
-					<!--{% csrf_token %}-->
-					<button type="button" id="trackBTN" name="trackBTN">coming soon</button>
+				<form action="{% url 'tracker' %}" method="post">
+					{% csrf_token %}
+					<button type="submit" id="trackBTN" name="trackBTN">sesh tracker</button>
 				</form>
 			</div>
 

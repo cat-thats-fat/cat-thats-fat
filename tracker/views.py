@@ -4,4 +4,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def tracker(request):
-    return HttpResponse("<h1>Sesh Tracker</h1>")
+    return render(request, 'tracker/tracker.html')

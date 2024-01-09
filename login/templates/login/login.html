@@ -18,9 +18,7 @@
 			<img src="{% static 'login/imgs/smurfcat.jpg' %}" id = "smurfcat" alt="smurfcat">
 
             <div class = "loginstatus">
-                {% if message %}
                 <p>status: {{ message }}</p>
-                {% endif %}
             </div>
 				<form method="post" action = "{% url 'login_submit' %}">
                     {% csrf_token %}
